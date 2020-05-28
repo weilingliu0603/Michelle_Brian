@@ -1,0 +1,27 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<title>JPSalon Homepage</title>
+</head>
+	
+<body>
+	
+	<p><b>Welcome to JP Salon!</p>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p><b>Click an icon to Add new member, Update member's email or mobile number, Add a new business transaction,</p>
+	<p><b>View daily transactions, View monthly sales revenue or View member's transaction history.</p>
+	<table width='840 height='227' border='0'>
+		<tr>
+			<td width='120'><a href="{{url_for('addmember')}}"><img src="{{ url_for('static', filename='addmember.png') }}" width='200' height='210' alt="add member" /></a></td>
+			<td width="120"><a href="{{url_for('updateMemberEandMN')}}"><img src="{{ url_for('static', filename='update.png') }}" width="200" height="210" alt="update" /></a></td>
+			<td width="120"><a href="{{url_for('addtransaction')}}"><img src="{{ url_for('static', filename='addtransaction.png') }}" width="200" height="210" alt="add transaction" /></a></td>
+			<td width="120"><a href="{{url_for('viewDailyTransaction')}}"><img src="{{ url_for('static', filename='viewdaily.png') }}" width="200" height="210" alt="view daily transaction" /></a></td>
+			<td width="120"><a href="{{url_for('viewmonthlysalesrev')}}"><img src="{{ url_for('static', filename='viewmonthlysalesrev.png') }}" width="200" height="210" alt="view monthly sales revenue" /></a></td>
+			<td width="120"><a href="{{url_for('viewMemberTransHistory')}}"><img src="{{ url_for('static', filename='viewHistory.png') }}" width="200" height="210" alt="view member transaction history" /></a></td>
+		</tr>
+	</table>
+</body>
+</html>
+
+

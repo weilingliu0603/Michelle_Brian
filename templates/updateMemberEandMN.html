@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Update Member's Email and Mobile Number</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>Update Member's Email and Mobile Number in JPSalon</p>
+	<br>
+	
+	<form action="{{ url_for('update') }}" method="POST">
+	 
+	MemberID&ensp;&ensp; <input name = "memberid">
+	<br><br>
+	<p>If you want to update your email only, enter your old email into the box.</p>
+	<p>Same goes to mobile number.</p>
+	<br>
+	New Email&ensp;&ensp;&ensp; <input name = "newemail">
+	<br><br>
+	New Mobile Number&ensp;&ensp;&ensp;&ensp; <input name = "newmobile">
+	<br><br>	
+	<input type="submit" value="Submit">
+	</form>
+	
+</body>
+</html>

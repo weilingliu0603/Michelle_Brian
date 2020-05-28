@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Business Transaction Added</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>JP Salon Invoice</p>
+	<br>
+	<p>InvoiceID: {{iID}} &ensp;&ensp;&ensp; Date: {{date}}</p>
+	<p>Name:{{n}}&ensp;&ensp;</p>
+	<p>Member: {{mID}}</p>
+	<p>Type of Service: {{ts}}</p>
+	<br>
+	<p>Discount: ${{disc}}</p>
+	<p>Total Amount: ${{totalamount}}</p>
+	<br>
+	<p>Business Transaction is added!</p>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>View Member Transaction History</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>View member transaction history in JPSalon</p>
+	<br>
+    <table border = 1>
+		<tr bgcolor='lightblue'>
+			<th>InvoiceID</th>
+			<th>Date</th>
+			<th>Total Amount</th>
+		</tr>
+        {% for i in range(totallst|length) %}     
+			<tr>
+				<td>{{invoiceIDlst[i]}}</td>
+				<td>{{datelst[i]}}</td>
+				<td>{{totallst[i]}}</td>
+            </tr>
+		{% endfor%}
+	</table>
+</body>
+</html>

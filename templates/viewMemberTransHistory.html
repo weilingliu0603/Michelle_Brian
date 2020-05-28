@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>View Member Transaction History</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>View member transaction history in JPSalon</p>
+	<br>
+	
+	<form action="{{ url_for('viewh') }}" method="POST">
+	 
+	Name&ensp;&ensp; <input name = "name">
+	<br><br>
+	MemberID&ensp;&ensp; <input name = "memberid">
+	<br><br>
+	<input type="submit" value="Submit">
+	</form>
+	
+</body>
+</html>

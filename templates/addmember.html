@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Add Member</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>Add a new member to JPSalon</p>
+	<br>
+	
+	<form action="{{ url_for('addedm') }}" method="POST">
+	 
+	Name&ensp;&ensp; <input name = "name">
+	<br><br>
+	MemberID&ensp;&ensp;&ensp; <input name = "memberid">
+	<br><br>
+	Gender&ensp;&ensp; <input name = "gender">
+	<br><br>
+	Email&ensp;&ensp; <input name = "email">
+	<br><br>
+	Mobile Number&ensp;&ensp;&ensp;&ensp; <input name = "mobileno">
+	<br><br>
+	Address&ensp;&ensp;&ensp; <input name = "address">
+	<br><br>
+	<input type="submit" value="Submit">
+	</form>
+	
+</body>
+</html>

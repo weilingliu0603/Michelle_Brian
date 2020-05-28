@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Add Business Transaction</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>Add a new business transaction in JPSalon</p>
+	<br>
+	
+	<form action="{{ url_for('addedt') }}" method="POST">
+	 
+	InvoiceID&ensp;&ensp;&ensp; <input name = "invoiceid">
+	<br><br>
+	Date&ensp;&ensp; <input name = "date">
+	<br><br>
+	Name&ensp;&ensp; <input name = "name">
+	<br><br>
+	MemberID&ensp;&ensp; <input name = "memberid">
+	<br><br>
+	Type of Service&ensp;&ensp;&ensp;&ensp; <input name = "typeservice">
+	<br><br>
+	<input type="submit" value="Submit">
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>View Sales Revenue</title>
+</head>
+
+<body>
+	<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='jpsalon.png') }}" width='300' height='100'></a>
+	<p>&nbsp;</p>
+	<p><b>View sales revenue of JPSalon</p>
+	<br>
+	<table border = 1>
+		<tr bgcolor='lightblue'>
+			<th>Month</th>
+			<th>Sales Revenue</th>
+		</tr>
+        {% for i in range(monthlysr|length) %}     
+			<tr>
+				<td>{{i+1}}</td>
+				<td>{{monthlysr[i]}}</td>
+            </tr>
+		{% endfor%}
+	</table>
+</body>
+</html>
